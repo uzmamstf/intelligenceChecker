@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <input type="text" name="name" placeholder="Enter Name">
+        <button onclick="intelligenceChecker()" >Check my intellligence</button>
+        <span></span>
+    </div>
+</body>
+
+</html>
+
+<script>
+
+    let intelligenceLevels = [
+
+        "dumb",
+        "sweet",
+        "cute",
+        "intelligent",
+        "fabulos",
+        "marvellous",
+        "brave",
+        "super smart",
+        "google",
+        "good person",
+        "dexter",
+        "great"
+    ]
+
+
+    function intelligenceChecker() {
+
+        let name = document.querySelector("input").value;
+
+        if (name == "") {
+            alert("Please enter a name")
+        }
+
+        else {
+            let randomIndex = parseInt(Math.random() * intelligenceLevels.length );
+            alert(intelligenceLevels[randomIndex]);
+            
+            if( name == document.querySelector("input").value){
+                alert("Please enter another name")
+            }
+
+            // let randNum = Math.floor(Math.random(intelligenceLevels)) + 1;
+            // document.querySelector('span').innerHTML = name + " " + intelligenceLevels[randNum];
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    function intelligenceCheckerrr() {}
+
+        /*
+            1. get input name
+            // if input is empty then show alert and go to step 3
+            2. Randomly select an intelligenceLevels
+            // ways
+            -loops
+            -if/else
+            -array
+            -Math.random()
+        
+        */
+
+
+
+        // for (let i = 0; i < intelligenceLevels; i++) {
+        //     alert(intelligenceLevels[i])
+        // loop is not used for this purpose
+        // }
+        // || name.charAt(0)== "A" - removes because of long code
+
+
+        //     if (name.length.toLowerCase() == 5) {
+        //         intelligence = intelligenceLevels[6]
+        //         alert(intelligence);
+        //     }
+        //     else if (name.charAt(0).toLowerCase() == "b") {
+        //         intelligence = intelligenceLevels[7]
+        //         alert(intelligence);
+        //     }
+        //     else if (name.charAt(0).toLowerCase() == "c") {
+        //         intelligence = intelligenceLevels[2]
+        //         alert(intelligence);
+        //     }
+        //     else if (name.charAt(0).toLowerCase() == "d") {
+        //         intelligence = intelligenceLevels[0]
+        //         alert(intelligence);
+        //     }
+        //     else if (name.charAt(0).toLowerCase() == "e") {
+        //         intelligence = intelligenceLevels[4]
+        //         alert(intelligence);
+        //     }
+        //     else if (name.charAt(0).toLowerCase() == "f") {
+        //         intelligence = intelligenceLevels[5]
+        //         alert(intelligence);
+        //     }
+        //     else if (name.charAt(0).toLowerCase() == "g") {
+        //         intelligence = intelligenceLevels[8]
+        //         alert(intelligence);
+        //     }
+        //     else if (name.charAt(0).toLowerCase() == "h") {
+        //         intelligence = intelligenceLevels[0]
+        //         alert(intelligence);
+        //     }
+        //     else if (name.charAt(0).toLowerCase() == "i") {
+        //         intelligence = intelligenceLevels[10]
+        //         alert(intelligence);
+        //     }
+        //     else if (name.charAt(0).toLowerCase() == "j") {
+        //         intelligence = intelligenceLevels[6]
+        //         alert(intelligence);
+        //     }
+        //     else if (name.charAt(0).toLowerCase() == "k") {
+        //         intelligence = intelligenceLevels[9]
+        //         alert(intelligence);
+        //     }
+        //     else if (name.charAt(0).toLowerCase() == "l") {
+        //         intelligence = intelligenceLevels[3]
+        //         alert(intelligence);
+        //     }
+        //     else if (name.charAt(0).toLowerCase() == "m") {
+        //         intelligence = intelligenceLevels[6]
+        //         alert(intelligence);
+        //     }
+        //     else if (name.charAt(0).toLowerCase() == "n") {
+        //         intelligence = intelligenceLevels[4]
+        //         alert(intelligence);
+        //     }
+        //     else if (name.charAt(0).toLowerCase() == "o") {
+        //         intelligence = intelligenceLevels[5]
+        //         alert(intelligence);
+        //     }
+        //     else if (name.charAt(0).toLowerCase() == "p") {
+        //         intelligence = intelligenceLevels[9]
+        //         alert(intelligence);
+        //     }
+        //     else if (name.charAt(0).toLowerCase() == "q") {
+        //         intelligence = intelligenceLevels[1]
+        //         alert(intelligence);
+        //     }
+        //     else if (name.charAt(0).toLowerCase() == "r") {
+        //         intelligence = intelligenceLevels[0]
+        //         alert(intelligence);
+        //     }
+        //     else if (name.charAt(0).toLowerCase() == "s") {
+        //         intelligence = intelligenceLevels[5]
+        //         alert(intelligence);
+        //     }
+        //     else if (name.charAt(0).toLowerCase() == "t") {
+        //         intelligence = intelligenceLevels[4]
+        //         alert(intelligence);
+        //     }
+        //     else if (name.charAt(0).toLowerCase() == "u") {
+        //         intelligence = intelligenceLevels[3]
+        //         alert(intelligence);
+        //     }
+        //     else if (name.charAt(0).toLowerCase() == "v") {
+        //         intelligence = intelligenceLevels[7]
+        //         alert(intelligence);
+        //     }
+        //     else if (name.charAt(0).toLowerCase() == "w") {
+        //         intelligence = intelligenceLevels[2]
+        //         alert(intelligence);
+        //     }
+        //     else if (name.charAt(0).toLowerCase() == "x") {
+        //         intelligence = intelligenceLevels[2]
+        //         alert(intelligence);
+        //     }
+        //     else if (name.charAt(0).toLowerCase() == "y") {
+        //         intelligence = intelligenceLevels[10]
+        //         alert(intelligence);
+        //     }
+        //     else if (name.charAt(0).toLowerCase() == "z") {
+        //         intelligence = intelligenceLevels[8]
+        //         alert(intelligence);
+        //     }
+        // }
+    
+    
+
+
+</script>
